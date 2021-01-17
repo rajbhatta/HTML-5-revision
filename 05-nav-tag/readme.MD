@@ -1,7 +1,7 @@
 ## What is nav tag? ##
 A nav can be used define the navigation section of the website
 
-## Example1 of header tag ##
+## Example1 of nav tag ##
 ```html
  <body>
     <header>This is header</header>
