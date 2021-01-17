@@ -1,7 +1,5 @@
-## What is aside tag? ##
-A section can be used to group things together thematically. There are two ways to use section tags
-- section tag inside article tag
-- section tag outside article tag
+## What is header tag? ##
+A header can be used define the header section of the website
 
 ## Example1 of header tag ##
 ```html
