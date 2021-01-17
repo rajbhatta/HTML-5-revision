@@ -1,55 +1,49 @@
-## What is audio tag? ##
-The audio element is used to embed audio content in an HTML document without requiring any additional plug-in like Flash player.
+## What is datalist tag? ##
+Autocompletion is a pattern that all web users are familiar with. When you do a search, your search engine suggests terms. When you type a new email message, your mail client suggest recipients. This functionality, however, has not been available to web developers without a nontrivial amount of JavaScript. One of the new HTML5 elements, the , brings this autocomplete functionality to the Web natively. 
 
-## Example1 of audio tag ##
+## Creating datalist ##
+To show how a datalist works, let’s start with a traditional text input:
+```html
+<label for=”favorite_team”>Favorite Team:</label>
+<input type=”text” name=”team” id=”favorite_team”>
+```
+
+This field asks a user to provide his or her favorite sports team. By default, the user will be given no additional help to complete the field. But by using a datalist, you can provide a list of options the user can select from to complete the field. To do this, define a datalist with an option element for each suggestion:
+```html
+<datalist>
+  <option>Detroit Lions</option>
+  <option>Detroit Pistons</option>
+  <option>Detroit Red Wings</option>
+  <option>Detroit Tigers</option>
+</datalist>
+```
+To tie a datalist to an input element, give the input element a list attribute and the datalist an id attribute that match. Here’s an example:
+
+```html
+<label for=”favorite_team”>Favorite Team:</label>
+<input type=”text” name=”team” id=”favorite_team” list=”team_list”>
+<datalist id=”team_list”>
+  <option>Detroit Lions</option>
+  <option>Detroit Pistons</option>
+  <option>Detroit Red Wings</option>
+  <option>Detroit Tigers</option>
+</datalist>
+```
+
+## Example1 of datalist tag ##
 ```html
  <body>
-    <header>This is header</header>
-    <nav>This is nav</nav>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
-
-    <section>
-        <audio controls="controls" src="birds.mp3">
-            Your browser does not support the HTML5 Audio element.
-        </audio>
-    </section>  
-      
+    <label for=”favorite_team”>Favorite Team:</label>
+    <input type=”text” name=”team” id=”favorite_team”>
     
+    <datalist id=”team_list”>
+        <option>Detroit Lions</option>
+        <option>Detroit Pistons</option>
+        <option>Detroit Red Wings</option>
+        <option>Detroit Tigers</option>
+      </datalist>
+
     <!-- JQuery needed for Bootstrap's JavaScript plugin -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- CDN Bootstrap min JavaScript-->
