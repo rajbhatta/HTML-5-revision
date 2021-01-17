@@ -24,7 +24,7 @@ A section can be used to group things together thematically. There are two ways 
         crossorigin="anonymous"></script>
 </body>
 ```
-<img src="aside1.gif"/>
+<img src="aside.gif"/>
 
 ### Example2 of aside tag ###
 ```html
