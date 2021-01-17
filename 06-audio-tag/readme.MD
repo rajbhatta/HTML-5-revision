@@ -58,8 +58,5 @@ The audio element is used to embed audio content in an HTML document without req
         crossorigin="anonymous"></script>
 </body>
 ```
-<img src="aside.gif"/>
-<br/>
-<img src="aside2.png"/>
 
 
