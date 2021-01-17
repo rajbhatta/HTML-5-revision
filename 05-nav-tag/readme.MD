@@ -53,7 +53,6 @@ A nav can be used define the navigation section of the website
 ```
 <img src="aside.gif"/>
 <br/>
-```
 <img src="aside2.png"/>
 
 
