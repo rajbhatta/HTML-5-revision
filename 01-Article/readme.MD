@@ -7,9 +7,9 @@ An article should make sense on its own and it should be possible to distribute 
 Potential sources for the 
 article element:
 
-Forum post
-Blog post
-News story
+- Forum post
+- Blog post
+- News story
 Note: The article element does not render as anything special in a browser. 
 
 ## How to use article tag ? ##
