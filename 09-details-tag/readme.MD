@@ -51,4 +51,4 @@ The details tag is used for the content/information which is initially hidden bu
 </html>
 ```
 
-
+<img src="det.png"/>
