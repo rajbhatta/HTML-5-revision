@@ -3,7 +3,7 @@ A section can be used to group things together thematically. There are two ways 
 - section tag inside article tag
 - section tag outside article tag
 
-## Section tag inside the article tag ##
+## Section tag outside the article tag ##
 ```html
  <section>
         <h2> Big Products</h2>
@@ -43,5 +43,66 @@ A section can be used to group things together thematically. There are two ways 
         </article>
     </section>
 ```
+
+### Section tag inside the article ###
+- If section is used inside the article then we must have heading immediatly after article tag
+```html
+<article>
+        <h2>Bean soup recipies</h2>
+        <section>
+            <h3>Ingridents</h3>
+        </section>
+
+        <section>
+            <h3>Directions</h3>
+        </section>
+    </article>
+```
+### Using header and footer inside section ###
+```html
+<body>
+
+    <section>
+        <header>
+            <h2>Name of the blog</h2>
+        </header>
+
+        <main>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque accusamus at facere rem quia expedita,
+            provident reprehenderit? Quia id reiciendis tempora soluta, omnis magni itaque quasi sequi necessitatibus
+            quae ipsum.
+        </main>
+
+        <footer>
+            <p>Author</p>
+            <p>TIme</p>
+        </footer>
+        <h2> Big Products</h2>
+        <article>
+            <h3>Products 1</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore quod temporibus ab, consequatur
+                repellendus aut magnam blanditiis praesentium quidem eum, quia quos totam debitis neque placeat sit
+                repellat
+                nam laudantium.</p>
+        </article>
+
+        <article>
+            <h3> Products 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus tempore soluta rerum!
+                Nihil debitis ab temporibus reiciendis! Voluptatum vel temporibus necessitatibus assumenda facere
+                quisquam
+                minima eveniet illo praesentium mollitia!</p>
+        </article>
+    </section>
+
+    <!-- JQuery needed for Bootstrap's JavaScript plugin -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- CDN Bootstrap min JavaScript-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+```
+
 
 
